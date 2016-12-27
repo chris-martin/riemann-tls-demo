@@ -4,7 +4,7 @@ export EASYRSA=$(pwd)
 
 # Initialize our PKI.
 easyrsa init-pki
-easyrsa build-ca
+easyrsa build-ca nopass
 
 # Generate some cert requests.
 easyrsa gen-req alice nopass
